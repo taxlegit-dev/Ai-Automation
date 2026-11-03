@@ -32,3 +32,13 @@ test("no finding or label uses the words dummy or simulated", () => {
   const text = JSON.stringify(getWorkshopData().findings).toLowerCase();
   assert.ok(!/dummy|simulated/.test(text));
 });
+
+test("overview metrics: aging, trend, days and value by use case are present", () => {
+  const m = getWorkshopData().metrics;
+  assert.equal(m.agingReceivable.length, 5);
+  assert.equal(m.trend.months.length, 12);
+  assert.equal(m.trend.sales.length, 12);
+  assert.equal(m.byUseCase.length, 5);
+  assert.ok(m.dso === null || m.dso > 0);
+  assert.ok(m.topCustomers.length > 0);
+});

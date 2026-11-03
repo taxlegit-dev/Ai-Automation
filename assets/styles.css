@@ -94,3 +94,35 @@ details table { margin-top: 8px; }
   .wrap { padding: 14px; }
   th, td { padding: 8px 6px; }
 }
+
+/* overview grids, charts and Action Hub details */
+.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
+.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid{display:grid;gap:12px;margin-bottom:14px}
+.panel{margin-bottom:14px}
+.panel svg{width:100%;height:auto;display:block}
+.panel svg text{fill:var(--mut);font-size:11px}
+.panel svg .gl{stroke:var(--line)}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin-bottom:6px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+.hb{display:grid;gap:7px;font-size:12.5px}
+.hb-row{display:grid;grid-template-columns:minmax(0,34%) 1fr auto;gap:10px;align-items:center}
+.hb-row span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hb-bar{background:var(--sunk);border-radius:3px;height:10px;overflow:hidden}
+.hb-bar i{display:block;height:100%;background:var(--accent)}
+.hub-list{display:grid;gap:10px}
+.hub-row{border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--card)}
+.hub-head{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:12px;align-items:center}
+.hub-title{font-size:14px}
+.hub-amt{font-weight:600;white-space:nowrap}
+.uc-tag{font-size:11px;font-weight:700;background:var(--sunk);border-radius:4px;padding:1px 6px}
+.hub-detail{border-top:1px solid var(--line);margin-top:12px;padding-top:12px;display:grid;gap:12px}
+.dsec{display:grid;gap:6px}
+.dsec h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:0}
+.dlist{margin:0;padding-left:18px;display:grid;gap:4px;font-size:13.5px}
+.msg{font-size:13px}
+.msg-body{white-space:pre-wrap;font:12.5px/1.45 ui-monospace,Consolas,monospace;background:var(--sunk);padding:10px;border-radius:8px;margin:0}
+.evcheck{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;font-weight:600;border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.evcheck input{margin-top:3px}
+.hub-btns .btn{white-space:nowrap}
+@media (max-width:760px){.kpis,.two{grid-template-columns:1fr}.hub-head{grid-template-columns:1fr}}
