@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlowIQ Workshop - Desktop</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo">F</span>
+    <div>
+      <div class="brand-title">FlowIQ Workshop Desktop</div>
+      <div id="company" class="brand-sub"></div>
+    </div>
+  </div>
+  <div class="me">
+    <div id="who" class="who"></div>
+    <button id="signout" class="btn ghost small" type="button">Sign out</button>
+  </div>
+</header>
+
+<div class="notice" role="note">
+  <strong>Sample data.</strong> <span id="notice"></span>
+</div>
+
+<nav class="tabs" id="tabs" aria-label="Sections">
+  <button data-tab="overview" class="tab active" type="button">Overview</button>
+  <button data-tab="UC1" class="tab" type="button">UC1 Receivables</button>
+  <button data-tab="UC2" class="tab" type="button">UC2 Credit limits</button>
+  <button data-tab="UC3" class="tab" type="button">UC3 Sales to overdue</button>
+  <button data-tab="UC4" class="tab" type="button">UC4 Duplicates</button>
+  <button data-tab="UC5" class="tab" type="button">UC5 Payment timing</button>
+  <button data-tab="hub" class="tab" type="button">Action Hub</button>
+  <button data-tab="mis" class="tab" type="button">MIS report</button>
+</nav>
+
+<main id="view" class="wrap">
+  <p class="loading">Loading the sample analysis...</p>
+</main>
+
+<script src="assets/desktop.js" defer></script>
+</body>
+</html>

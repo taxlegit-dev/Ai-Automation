@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/**/*.mjs": {
+      "includeFiles": "{data/**,assets/fonts/**}",
+      "maxDuration": 30
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "flowiq-workshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FlowIQ finance automation workshop desktop (sample data, Vercel deployment).",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "pdfkit": "^0.15.2"
+  }
+}

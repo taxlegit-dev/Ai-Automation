@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlowIQ Workshop - Register</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="reg">
+<main class="card">
+  <p class="eyebrow">FlowIQ Finance Automation</p>
+  <h1>Workshop registration</h1>
+  <p class="lead">Register once to open the workshop desktop. Your details are used only for this workshop: reminders and MIS reports are sent to the email address and WhatsApp number you enter here.</p>
+
+  <form id="reg" novalidate>
+    <div class="field">
+      <label for="name">Name <span class="req">*</span></label>
+      <input id="name" name="name" autocomplete="name" maxlength="100" required>
+      <div class="err" data-for="name"></div>
+    </div>
+    <div class="field">
+      <label for="email">Email address <span class="req">*</span></label>
+      <input id="email" name="email" type="email" autocomplete="email" maxlength="120" required>
+      <div class="err" data-for="email"></div>
+    </div>
+    <div class="field">
+      <label for="phone">Phone number (WhatsApp) <span class="req">*</span></label>
+      <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="10-digit mobile number" maxlength="14" required>
+      <div class="hint">Enter exactly 10 digits, without +91.</div>
+      <div class="err" data-for="phone"></div>
+    </div>
+    <div class="field">
+      <label for="designation">Designation / profession <span class="opt">(optional)</span></label>
+      <input id="designation" name="designation" maxlength="100" placeholder="e.g. Accountant, CA, Finance manager">
+      <div class="err" data-for="designation"></div>
+    </div>
+    <label class="consent">
+      <input type="checkbox" id="consent" name="consent">
+      <span>I agree that FlowIQ may use my name, email address and phone number to send me payment reminders (email and WhatsApp) and MIS reports for this workshop only.</span>
+    </label>
+    <div class="err" data-for="consent"></div>
+
+    <button type="submit" id="submit" class="btn primary">Register and open the workshop desktop</button>
+    <div id="formError" class="banner error" role="alert" hidden></div>
+  </form>
+  <p class="fine">No verification code is needed. Your details are stored in the workshop registration sheet.</p>
+</main>
+<script src="assets/register.js" defer></script>
+</body>
+</html>
